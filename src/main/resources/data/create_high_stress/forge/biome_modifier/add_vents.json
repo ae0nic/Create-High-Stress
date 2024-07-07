@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": ["create_high_stress:lotrum_vent","create_high_stress:ospum_vent","create_high_stress:ocilium_vent"],
+  "step": "vegetal_decoration"
+}

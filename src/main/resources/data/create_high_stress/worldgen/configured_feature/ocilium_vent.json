@@ -1,0 +1,47 @@
+{
+  "type": "molten_vents:molten_vent",
+  "config": {
+    "decorativeBlock": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 8,
+          "data": {
+            "Name": "create_high_stress:ocilium"
+          }
+        }
+      ]
+    },
+    "outerBlock": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 8,
+          "data": {
+            "Name": "create_high_stress:ocilium"
+          }
+        }
+      ]
+    },
+    "innerBlock": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "molten_vents:dormant_molten_ocilium"
+      }
+    },
+    "liquidBlock": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:lava"
+      }
+    },
+    "depth": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 80,
+        "max_inclusive": 100
+      }
+    },
+    "underwater": false
+  }
+}
