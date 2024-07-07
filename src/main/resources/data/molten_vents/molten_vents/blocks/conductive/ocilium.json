@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create_high_stress:ocilium",
+    "molten_vents:dormant_molten_ocilium",
+    "molten_vents:active_molten_ocilium"
+  ]
+}

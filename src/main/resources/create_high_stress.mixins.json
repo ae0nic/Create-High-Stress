@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.ae0nic.createhighstress.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "createhighstress.refmap.json",
+  "mixins": [
+    "MoltenVentFeatureMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
