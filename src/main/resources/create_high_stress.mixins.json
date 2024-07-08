@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "me.ae0nic.createhighstress.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "createhighstress.refmap.json",
+  "refmap": "create_high_stress.refmap.json",
   "mixins": [
     "MoltenVentFeatureMixin"
   ],

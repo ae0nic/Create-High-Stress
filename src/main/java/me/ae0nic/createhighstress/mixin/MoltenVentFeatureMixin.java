@@ -9,13 +9,15 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(MoltenVentFeature.class)
 public abstract class MoltenVentFeatureMixin {
-    @Inject(method = "place", at = @At(value = "HEAD"), cancellable = true)
+
+    @Inject(method = "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z", at = @At(value = "HEAD"), cancellable = true, remap = false)
     private void createHighStress$place(FeaturePlaceContext<MoltenVentConfiguration> pContext, CallbackInfoReturnable<Boolean> cir) {
         MoltenVentConfiguration configuration = pContext.config();
         BlockPos origin = pContext.origin();
@@ -39,4 +41,5 @@ public abstract class MoltenVentFeatureMixin {
             }
         }
     }
+
 }

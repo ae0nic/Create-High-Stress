@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "me/ae0nic/createhighstress/mixin/MoltenVentFeatureMixin": {
+      "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    }
+  },
+  "data": {
+    "searge": {
+      "me/ae0nic/createhighstress/mixin/MoltenVentFeatureMixin": {
+        "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      }
+    }
+  }
+}
