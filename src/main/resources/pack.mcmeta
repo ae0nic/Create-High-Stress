@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "create_high_stress resources",
+    "description": "Creates textures, models, worldgen features, and more for the Create: High Stress mod",
     "pack_format": 15,
     "forge:server_data_pack_format": 12
   }
