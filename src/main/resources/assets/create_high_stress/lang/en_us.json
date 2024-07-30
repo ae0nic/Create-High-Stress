@@ -2,5 +2,6 @@
   "block.create_high_stress.lotrum": "Lotrum",
   "block.create_high_stress.ospum": "Ospum",
   "block.create_high_stress.ocilium": "Ocilium",
-  "create_high_stress.recipe.cobblestone": "Cobblestone Generation"
+  "create_high_stress.recipe.cobblestone": "Cobblestone Generation",
+  "item_group.create_high_stress": "Create: High Stress"
 }

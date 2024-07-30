@@ -2,6 +2,7 @@ package me.ae0nic.createhighstress;
 
 import com.mojang.logging.LogUtils;
 import me.ae0nic.createhighstress.init.BlockInit;
+import me.ae0nic.createhighstress.init.CreativeModeTabInit;
 import me.ae0nic.createhighstress.init.ItemInit;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -25,5 +26,8 @@ public class CreateHighStress{
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         BlockInit.register(modEventBus);
         ItemInit.register(modEventBus);
+        CreativeModeTabInit.TABS.register(modEventBus);
     }
+
+
 }

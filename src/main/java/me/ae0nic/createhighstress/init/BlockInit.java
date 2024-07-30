@@ -26,8 +26,7 @@ public class BlockInit {
 
     public static <T extends Block> RegistryObject<T> registerWithBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> toReturn = BLOCKS.register(name, supplier);
-        ItemInit.registerBlockItem(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
-
+        CreativeModeTabInit.tabItems.add(ItemInit.registerBlockItem(name, () -> new BlockItem(toReturn.get(), new Item.Properties())));
         return toReturn;
     }
     public static void register(IEventBus bus) {
