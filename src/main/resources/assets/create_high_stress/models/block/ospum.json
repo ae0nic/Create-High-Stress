@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "create_high_stress:block/tinted_block",
   "textures": {
     "all": "create_high_stress:block/ospum"
   }

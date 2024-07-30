@@ -5,6 +5,8 @@ import com.Apothic0n.MoltenVents.core.objects.MoltenBlocks;
 import me.ae0nic.createhighstress.CreateHighStress;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -25,9 +27,9 @@ public class BlockInit {
     public static <T extends Block> RegistryObject<T> registerWithBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> toReturn = BLOCKS.register(name, supplier);
         ItemInit.registerBlockItem(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
+
         return toReturn;
     }
-
     public static void register(IEventBus bus) {
         MoltenBlocks.moltenBlocks.add(MoltenBlocks.createMoltenBlocks("lotrum"));
         MoltenBlocks.moltenBlocks.add(MoltenBlocks.createMoltenBlocks("ospum"));
